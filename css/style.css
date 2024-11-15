@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1920px;
+    height: 2000px;
+    background-color: #242424;
+    position: relative;
+}
+
+.contenedor header{
+
+    width: 100%;
+    height: 100px;
+    background-color: #242424;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.contenedor header .varmenu{
+
+    width: 100%;
+    max-width: 1385px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+
+}
+
+.contenedor header .varmenu .logoheader img{
+    width: 65px;
+    display: flex;
+    transition: all 0.7s;
+    
+}
+
+.contenedor header .varmenu .logoheader img:hover{
+    box-shadow: 0px 8px 0px 2px rgba(36,36,36,0.45);
+    transform: scale(110%);
+}
+
+.contenedor header .varmenu .barrabusqueda{
+
+    margin-left: 35px;
+   width: 406px;
+    height: 32px;
+    border-radius: 30px;
+    border: solid 2px #E0D8B0;
+    background-color: transparent;
+    color: #E0D8B0;
+    margin-right:110px;
+    position: relative;
+    display: flex;
+}
+
+.contenedor header .varmenu .barrabusqueda input{
+    width: 365px;
+    height: 28px;
+    padding: 0PX 20PX 0PX 25PX;
+    background-color: transparent;
+    color: #E0D8B0;
+    border-radius: 30px;
+    margin-right:10px;
+    position: relative;
+    display: flex;
+    border: none;
+}
+
+.contenedor header .varmenu .barrabusqueda input :active{
+    border: none;
+}
+
+::placeholder{
+    color: #E0D8B0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+#busqueda::-webkit-search-cancel-button{
+    position:relative;
+    right:20px;  
+
+    -webkit-appearance: none;
+}
+
+.contenedor header .varmenu .barrabusqueda .iconob i{
+   display: flex;
+   color: #E0D8B0;
+}
+
+
+
+.contenedor header .varmenu .barrabusqueda .iconob{
+    display: flex;
+    margin-top: 8px;
+}
+
+.contenedor header .varmenu .menu nav{
+    display: flex;
+    width: 90%;
+    height: 65px;
+}
+
+
+.contenedor header .varmenu .menu nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+.contenedor header .varmenu .menu nav ul li{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin-left: 44px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.contenedor header .varmenu .menu nav ul li:hover{
+    transform: scale(108%);
+    box-shadow: 0px 2px 0px 4px rgba(36,36,36,0.99);
+
+}
+
+
+.contenedor header .varmenu .menu nav ul li a{
+    text-decoration: none;
+    color: #E0D8B0;
+}
+
+.contenedor header .varmenu .menu nav ul .btnlogin{
+    width: 125px;
+    height: 35px;
+    border: solid 1.5px #E0D8B0;
+    border-radius: 30px;
+    padding-top: 6px;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+
+.contenedor header .varmenu .menu nav ul .btnlogin:hover{
+    transform: scale(108%);
+}
+
+.contenedor header .varmenu .menu nav i{
+    margin-top: 14px;
+    color: #E0D8B0;
+    display: none;
+    margin-right: 30px;
+}
+
+.contenedor header .varmenu .bolsacarrito a img{
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+    display: flex;
+    margin-top: 5px;
+    color: #E0D8B0;
+    transition: all 0.3s;
+}
+
+.contenedor header .varmenu .bolsacarrito a img:hover{
+    transform: scale(110%);
+    box-shadow: 0px 2px 0px 3px rgba(31, 31, 31, 0.70);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/* COVER HEADER */
+
+.contenedor .coverheader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 1vmin;
+    padding-right: 40px;
+    padding-top: 100px;
+    position: relative;
+    max-width: 1385px;
+    width: 100%;
+    height: 675px;
+    margin: 0 auto;
+    transition: all 0.5s;
+
+   
+}
+
+.contenedor .coverheader h1{
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #E0D8B0;
+}
+
+.contenedor .coverheader p{
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #E0D8B0;
+}
+
+.contenedor .coverheader img{
+    max-width: 675px;
+
+}
+
+.contenedor .coverheader button{
+    width: 240px;
+    height: 60px;
+    border-radius: 20px;
+    height: 75p;
+    background-color: #E0D8B0;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s;
+    
+}
+
+.contenedor .coverheader button:hover{
+   cursor: pointer;
+   box-shadow: 0px 6px 0px 2px rgba(36,36,36,0.65);
+   transform: translateY(-5px);
+   background-color: #ede5c0;
+    
+}
+
+
+
+
+/* Seccion Nosotros */
+
+.contenedor .secNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    padding: 1vmin;
+    padding-right: 40px;
+    /*padding-top: 100px;*/
+    position: relative;
+    max-width: 1385px;
+    width: 100%;
+    height: 675px;
+    margin: 0 auto;
+    transition: all 0.5s;
+    position: relative;
+
+}
+
+.contenedor .secNosotros h1{
+    font-size: 35px;
+    color: #E0D8B0;
+    margin-bottom: 40px;
+}
+
+.contenedor .secNosotros .infonosotros{
+    font-size: 20px;
+    color: #CCC;
+    margin-bottom: 40px;
+    width: 80%;
+    text-align: center;
+}
+
+.contenedor .secNosotros .MVV{
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    height: 350px;
+    position: relative;
+
+}
+
+
+.contenedor .secNosotros .MVV h2{
+    font-size:28px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #E0D8B0;
+}
+
+.contenedor .secNosotros .MVV p{
+    font-size: 16px;
+    text-align: center;
+    color:  #CCC;
+}
+
+.contenedor .secNosotros .MVV .mision{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    border: solid 1px #E0D8B0;
+    padding: 10px;
+}
+
+.contenedor .secNosotros .MVV .vision{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    border: solid 1px #E0D8B0;
+    padding: 10px;
+}
+
+.contenedor .secNosotros .MVV .valores{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    border: solid 1px #E0D8B0;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+@media (max-width:1920px){
+    .contenedor .coverheader img{
+        width: 675px;
+    }
+}
+
+
+@media (max-width:1378px){
+    .varmenu ul li{
+        display: none;
+    }
+
+    .contenedor header .varmenu .bolsacarrito a img{
+        display: none;
+    }
+
+    .contenedor header .varmenu .menu nav i{
+        display: flex;
+    }
+
+    .contenedor .coverheader h1{
+        margin-left: 20px;
+    }
+
+    .contenedor .coverheader p{
+        margin-left: 20px;
+    }
+
+    .contenedor .coverheader button{
+        margin-left: 20px;
+    }
+
+    .contenedor header .varmenu .barrabusqueda .iconob i{
+        margin-left: 20px;
+    }
+
+}
+
+
+@media (max-width:1270px){
+    .contenedor .coverheader img{
+        width: 600px;
+    }
+}
+
+
+@media (max-width:1097px){
+
+    .contenedor .coverheader button{
+        margin-bottom: 40px;
+    }
+
+    .contenedor .coverheader h1{
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width:1037px){
+    .contenedor .coverheader img{
+        width: 540px;
+    }
+}
+
+
+@media (max-width:670px){
+.contenedor header .varmenu .barrabusqueda .iconob i{
+    display: none;
+}
+}
+
+
+@media (max-width:616px){
+    .contenedor .menu i{
+        margin-left: -70px;
+    }
+}
+
+
+
+@media (max-width:548px){
+    .contenedor header .varmenu .barrabusqueda{
+        display: none;
+    }
+
+    .contenedor header .varmenu .barrabusqueda input{
+        display: none;
+    }
+}
+
+
+@media (max-width:471px){
+    .varmenu ul li{
+        display: none;
+    }
+   
+    .contenedor .coverheader img{
+        width: 400px;
+    }
+}
+
+@media (max-width:426px){
+   
+    .contenedor .coverheader img{
+        display: none;
+    }
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.login {
+    background-color:rgba(36,36,36,0.95);
+    border-radius: 30px;
+    padding: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    min-height: 400px;
+    
+
+}
+
+.login form{
+    text-align: center;
+}
+
+.login h1 {
+font-size: 50px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-bottom: 10px;
+color: #E0D8B0;
+}
+
+.login .loginOptions {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.login .loginOptions i{
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.058);
+    width: 40px;
+    height: 35px;
+    border-radius: 20px;
+    color: #E0D8B0;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
+
+}
+
+
+.login form .inputE {
+    min-width: 100%;
+    border-radius: 30px;
+    height: 30px;
+    padding: 20px 45px 20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.login form .inputP {
+    min-width: 100%;
+    border-radius: 30px;
+    height: 30px;
+    padding: 20px 45px 20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+/* Iconos Correo y Contraseña */
+
+.login form .InputEmail i{
+    position: absolute;
+    right: 80px;
+    top: 222px;
+    color: rgb(36, 36, 36);
+}
+
+.login form .inputpass i{
+    position: absolute;
+    right: 80px;
+    top: 275px;
+    color: rgb(36, 36, 36);
+}
+
+
+
+.login form .rememberMe {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #E0D8B0;
+}
+
+.login form .rememberMe input{
+    margin-right: 5px;
+}
+
+.login form .rememberMe a{
+    margin-left: 5px;
+    color: #ffffffdf;
+}
+
+.login form .botonlogin{
+    transition: all 2.5s;
+}
+
+.login form .botonlogin input{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #E0D8B0;
+    margin-bottom: 25px;
+}
+
+.login form .Registrar{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: #ffffffdf;
+}
+
+.login form .Registrar a {
+    margin-left: 6px;
+    color: #E0D8B0;
+}
+
+.login form .botonlogin :hover{
+    transform: scale();
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.438);
+    cursor: grab;
+}
+
+.login form .loginOptions i:hover{
+    transform: scale();
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.253);
+}
+
+/* body :hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.866);
+    } */
