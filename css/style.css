@@ -105,6 +105,10 @@
     margin-top: 8px;
 }
 
+
+
+/* NAV */
+
 .contenedor header .varmenu .menu nav{
     display: flex;
     width: 90%;
@@ -118,6 +122,7 @@
     align-items: center;
 
 }
+
 
 .contenedor header .varmenu .menu nav ul li{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -139,13 +144,27 @@
     color: #E0D8B0;
 }
 
-.contenedor header .varmenu .menu nav ul .btnlogin{
+.contenedor header .varmenu .menu nav ul a:visited{
+    text-decoration: none;
+    color: #E0D8B0;
+}
+
+.contenedor header .varmenu .menu nav ul a{
+    text-decoration: none;
+    color: #E0D8B0;
+}
+
+
+
+/* Boton Iniciar Sesion */
+
+.contenedor header .varmenu .menu nav ul a .btnlogin{
     width: 125px;
     height: 35px;
     border: solid 1.5px #E0D8B0;
     border-radius: 30px;
-    padding-top: 6px;
-    padding-left: 15px;
+    padding-top: 8px;
+    padding-left: 11px;
     margin-right: 20px;
 }
 
@@ -153,12 +172,17 @@
     transform: scale(108%);
 }
 
+
+/*Inono menu hamburguesa*/
+
 .contenedor header .varmenu .menu nav i{
     margin-top: 14px;
     color: #E0D8B0;
     display: none;
     margin-right: 30px;
 }
+
+
 
 .contenedor header .varmenu .bolsacarrito a img{
     width: 48px;
