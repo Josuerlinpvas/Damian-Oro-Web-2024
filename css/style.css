@@ -219,8 +219,9 @@
     position: relative;
     max-width: 1385px;
     width: 100%;
-    height: 675px;
+    min-height: 700px;
     margin: 0 auto;
+    margin-bottom: 40px;
     transition: all 0.5s;
 
    
@@ -278,8 +279,9 @@
     /*padding-top: 100px;*/
     position: relative;
     max-width: 1385px;
+  
     width: 100%;
-    height: 675px;
+    height: 600px;
     margin: 0 auto;
     transition: all 0.5s;
     position: relative;
@@ -303,9 +305,10 @@
 .contenedor .secNosotros .MVV{
     justify-content: space-between;
     display: flex;
-    width: 60%;
+    width: 70%;
     height: 350px;
     position: relative;
+    margin-bottom: 10px;
 
 }
 
@@ -318,9 +321,10 @@
 }
 
 .contenedor .secNosotros .MVV p{
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     color:  #CCC;
+    margin-bottom: 20px;
 }
 
 .contenedor .secNosotros .MVV .mision{
@@ -328,11 +332,17 @@
     align-items: center;
     position: relative;
     flex-direction: column;
-    width: 200px;
-    height: 280px;
+    width: 260px;
+    height: 350px;
     border-radius: 20px;
     border: solid 1px #E0D8B0;
     padding: 10px;
+}
+
+.contenedor .secNosotros .MVV .mision i{
+    color: #c8c09d;
+    margin-top: 20px;
+    display: flex;
 }
 
 .contenedor .secNosotros .MVV .vision{
@@ -340,11 +350,18 @@
     align-items: center;
     position: relative;
     flex-direction: column;
-    width: 200px;
-    height: 280px;
+    width: 260px;
+    height: 350px;
     border-radius: 20px;
     border: solid 1px #E0D8B0;
     padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.contenedor .secNosotros .MVV .vision i{
+    margin-top: 18px;
+    color: #c8c09d;
 }
 
 .contenedor .secNosotros .MVV .valores{
@@ -352,11 +369,16 @@
     align-items: center;
     position: relative;
     flex-direction: column;
-    width: 200px;
-    height: 280px;
+    width: 260px;
+    height: 350px;
     border-radius: 20px;
     border: solid 1px #E0D8B0;
     padding: 10px;
+}
+
+.contenedor .secNosotros .MVV .valores i{
+    color: #c8c09d;
+    margin-top: 36px;
 }
 
 
