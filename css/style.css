@@ -1,3 +1,6 @@
+
+/*/ GENERALES /*/
+
 *{
     margin: 0;
     padding: 0;
@@ -5,13 +8,26 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 100px;
+}
+
+
+/*// INICIO DEL CODIGO //*/
+
 .contenedor{
     width: 100%;
     max-width: 1920px;
-    height: 2000px;
+    height: 2600px;
+    /*height: auto;*/
     background-color: #242424;
     position: relative;
 }
+
 
 .contenedor header{
 
@@ -22,6 +38,8 @@
     position: fixed;
     z-index: 10;
 }
+
+/*// BARRA MENU //*/
 
 .contenedor header .varmenu{
 
@@ -107,7 +125,7 @@
 
 
 
-/* NAV */
+/*// NAV - BOTONES //*/
 
 .contenedor header .varmenu .menu nav{
     display: flex;
@@ -144,19 +162,10 @@
     color: #E0D8B0;
 }
 
-.contenedor header .varmenu .menu nav ul a:visited{
-    text-decoration: none;
-    color: #E0D8B0;
-}
-
-.contenedor header .varmenu .menu nav ul a{
-    text-decoration: none;
-    color: #E0D8B0;
-}
 
 
 
-/* Boton Iniciar Sesion */
+/* BOTON INICIAR SESION */
 
 .contenedor header .varmenu .menu nav ul a .btnlogin{
     width: 125px;
@@ -168,12 +177,22 @@
     margin-right: 20px;
 }
 
+.contenedor header .varmenu .menu nav ul a{
+    text-decoration: none;
+    color: #E0D8B0;
+}
+
+/*.contenedor header .varmenu .menu nav ul a:visited{
+    text-decoration: none;
+    color: #E0D8B0;
+}*/
+
 .contenedor header .varmenu .menu nav ul .btnlogin:hover{
     transform: scale(108%);
 }
 
 
-/*Inono menu hamburguesa*/
+/*ICONO MENU HAMBURGUESA*/
 
 .contenedor header .varmenu .menu nav i{
     margin-top: 14px;
@@ -183,6 +202,7 @@
 }
 
 
+/* BOLSA CARRITO */
 
 .contenedor header .varmenu .bolsacarrito a img{
     width: 48px;
@@ -203,9 +223,7 @@
 
 
 
-
-
-/* COVER HEADER */
+/*// COVER HEADER //*/
 
 .contenedor .coverheader{
     display: flex;
@@ -241,6 +259,9 @@
 
 .contenedor .coverheader img{
     max-width: 675px;
+    filter: drop-shadow(1px 1px 5px);
+    filter: contrast(1.1);
+    object-fit: cover;
 
 }
 
@@ -267,7 +288,7 @@
 
 
 
-/* Seccion Nosotros */
+/*// Seccion Nosotros //*/
 
 .contenedor .secNosotros{
     display: flex;
@@ -275,16 +296,12 @@
     align-items: center;    
     justify-content: center;
     padding: 1vmin;
-    padding-right: 40px;
-    /*padding-top: 100px;*/
-    position: relative;
-    max-width: 1385px;
-  
     width: 100%;
     height: 600px;
     margin: 0 auto;
     transition: all 0.5s;
     position: relative;
+    margin-bottom: 120px;
 
 }
 
@@ -301,6 +318,9 @@
     width: 80%;
     text-align: center;
 }
+
+
+/* Mision, Vision y Valores */
 
 .contenedor .secNosotros .MVV{
     justify-content: space-between;
@@ -337,12 +357,14 @@
     border-radius: 20px;
     border: solid 1px #E0D8B0;
     padding: 10px;
+    transition: all 0.5s;
 }
 
 .contenedor .secNosotros .MVV .mision i{
-    color: #c8c09d;
     margin-top: 20px;
-    display: flex;
+    color: #c8c09dcc;
+    opacity: 0.4; /* El ícono se ve casi transparente */
+    transition: all 0.5s; /* Transición suave para el ícono */
 }
 
 .contenedor .secNosotros .MVV .vision{
@@ -356,12 +378,15 @@
     border: solid 1px #E0D8B0;
     padding: 10px;
     margin-left: 10px;
-    margin-right: 10px
+    margin-right: 10px;
+    transition: all 0.5s;
 }
 
 .contenedor .secNosotros .MVV .vision i{
-    margin-top: 18px;
-    color: #c8c09d;
+    margin-top: 20px;
+    color: #c8c09dcc;
+    opacity: 0.4; /* El ícono se ve casi transparente */
+    transition: all 0.5s; /* Transición suave para el ícono */
 }
 
 .contenedor .secNosotros .MVV .valores{
@@ -374,17 +399,833 @@
     border-radius: 20px;
     border: solid 1px #E0D8B0;
     padding: 10px;
+    transition: all 0.5s;
 }
 
 .contenedor .secNosotros .MVV .valores i{
-    color: #c8c09d;
     margin-top: 36px;
+    color: #c8c09dcc;
+    opacity: 0.4; /* El ícono se ve casi transparente*/
+    transition: all 0.5s; /* Transición suave para el ícono */
 }
 
 
 
+/*// SECCION ACCESORIOS //*/
+
+.contenedor .secAccesorios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    padding: 1vmin;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+    transition: all 0.5s;
+    position: relative;
+    margin-bottom: 100px;
 
 
+}
+
+.contenedor .secAccesorios h1{
+    font-size: 35px;
+    color: #E0D8B0;
+    margin-bottom: 60px;
+}
+
+.contenedor .secAccesorios .gridAccesorios{
+    display: grid;
+    justify-content: space-around;
+    width: 70%;
+    min-height: 700px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 20px;
+    position: relative;
+    
+}
+
+
+.contenedor .secAccesorios .gridAccesorios img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+/*/ CADENAS /*/
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas{
+    background-color: aliceblue;
+    display: block;
+    grid-column: 1/3;
+    grid-row: 1/5;
+    border: solid #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+
+
+}
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas .nombrecarta1{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+
+}
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas .cardinfo1{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 70px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas .nombrecarta1sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 70%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+/*/ Efecto oscuro en la card /*/
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.092); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -180px 150px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+  /*/ ANILLOS /*/
+
+
+.contenedor .secAccesorios .gridAccesorios .anillos{
+    background-color: green;
+    display: block;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+
+}
+
+.contenedor .secAccesorios .gridAccesorios .anillos .nombrecarta2{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    text-align: center;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    transition: all 0.8s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .anillos .cardinfo2{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .anillos .nombrecarta2sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+/*/ Efecto oscuro en la card /*/
+
+.contenedor .secAccesorios .gridAccesorios .anillos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -100px 120px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+ /*/ RELOJES /*/
+  
+.contenedor .secAccesorios .gridAccesorios .relojes{
+    background-color: bisque;
+    display: block;
+    grid-column: 5/7;
+    grid-row: 1/3;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.contenedor .secAccesorios .gridAccesorios .relojes .nombrecarta3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+.contenedor .secAccesorios .gridAccesorios .relojes .cardinfo3{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .relojes .nombrecarta3sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .relojes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -100px 120px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+   /*/ ARETES /*/
+
+.contenedor .secAccesorios .gridAccesorios .aretes{
+    background-color: pink;
+    display: block;
+    grid-column: 1/3;
+    grid-row: 5/7;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .aretes .nombrecarta4{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .aretes .cardinfo4{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.5s;
+
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .aretes .nombrecarta4sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.contenedor .secAccesorios .gridAccesorios .aretes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.177); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -100px 100px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+   /*/ Tobilleras /*/
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras{
+    background-color: yellow;
+    display: block;
+    grid-column: 5/7;
+    grid-row: 3/5;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras .nombrecarta5{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras .cardinfo5{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.5s;
+
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras .nombrecarta5sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.066); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -90px 100px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+ /*/ PULSERAS /*/
+
+
+.contenedor .secAccesorios .gridAccesorios .pulseras{
+    background-color: black;
+    display: block;
+    grid-column: 3/5;
+    grid-row: 3/7;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .pulseras .nombrecarta6{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .pulseras .cardinfo6{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 70px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .pulseras .nombrecarta6sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 70%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+
+}
+
+
+
+.contenedor .secAccesorios .gridAccesorios .pulseras::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.07); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -180px 90px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+   /*/ CHAMS /*/
+
+.contenedor .secAccesorios .gridAccesorios .charms{
+    background-color: purple;
+    display: block;
+    grid-column: 5/7;
+    grid-row: 5/7;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .charms .nombrecarta7{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .charms .cardinfo7{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.5s;
+
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .charms .nombrecarta7sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.contenedor .secAccesorios .gridAccesorios .charms::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.185); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -100px 100px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+
+
+
+/*Hover*/
+
+.contenedor .secNosotros .MVV .mision:hover{
+    transform:translateY(-10px);
+    box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .secNosotros .MVV .mision:hover i{
+   opacity: 1;
+   color: #c8c09d;
+}
+
+.contenedor .secNosotros .MVV .vision:hover{
+    transform:translateY(-10px);
+    box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .secNosotros .MVV .vision:hover i{
+   opacity: 1;
+   color: #c8c09d;
+}
+
+.contenedor .secNosotros .MVV .valores:hover{
+    transform:translateY(-10px);
+    box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .secNosotros .MVV .valores:hover i{
+   opacity: 1;
+   color: #c8c09d;
+}
+
+
+/* Hover Cadenas Card */
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .Cadenas:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .Cadenas:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .Cadenas:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .Cadenas:hover .cardinfo1{
+    opacity: 1;
+ }
+
+
+
+/*Hover Anillos*/
+
+.contenedor .secAccesorios .gridAccesorios .anillos:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .anillos:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .anillos:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .anillos:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .anillos:hover .cardinfo2{
+    opacity: 1;
+ }
+
+
+
+
+
+ /*Hover Relojes*/
+
+.contenedor .secAccesorios .gridAccesorios .relojes:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .relojes:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .relojes:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .relojes:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .relojes:hover .cardinfo3{
+    opacity: 1;
+ }
+
+
+
+ /*Hover aretes*/
+
+.contenedor .secAccesorios .gridAccesorios .aretes:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .aretes:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .aretes:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .aretes:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .aretes:hover .cardinfo4{
+    opacity: 1;
+ }
+ 
+
+
+ /* Hover Pulseras */
+
+.contenedor .secAccesorios .gridAccesorios .pulseras:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .pulseras:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .pulseras:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .pulseras:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .pulseras:hover .cardinfo6{
+    opacity: 1;
+ }
+
+
+/*Hover Tobilleras*/
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .tobilleras:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .tobilleras:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .tobilleras:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .tobilleras:hover .cardinfo5{
+    opacity: 1;
+ }
+
+
+
+
+/*Hover Chams*/
+
+.contenedor .secAccesorios .gridAccesorios .charms:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .charms:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .charms:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .charms:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .charms:hover .cardinfo7{
+    opacity: 1;
+ }
 
 
 
