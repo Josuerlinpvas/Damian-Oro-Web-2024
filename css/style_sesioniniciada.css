@@ -1,0 +1,1849 @@
+
+/*/ GENERALES /*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 100px;
+}
+
+
+/*// INICIO DEL CODIGO //*/
+
+.contenedor{
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    background-color: #242424;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+
+.contenedor header{
+
+    width: 100%;
+    height: 100px;
+    background-color: #242424;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+/*// BARRA MENU //*/
+
+.contenedor header .varmenu{
+
+    width: 100%;
+    max-width: 1385px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+
+}
+
+.contenedor header .varmenu .logoheader img{
+    width: 65px;
+    display: flex;
+    transition: all 0.7s;
+    
+}
+
+.contenedor header .varmenu .logoheader img:hover{
+    box-shadow: 0px 6px 0px 0px rgb(26, 26, 26, 0.80);
+    transform: scale(110%);
+    border-radius: 30px;
+}
+
+
+
+/*/ BARRA BUSQUEDA /*/
+
+.contenedor header .varmenu .barrabusqueda{
+
+    margin-left: 35px;
+    width: 406px;
+    height: 32px;
+    border-radius: 30px;
+    border: solid 2px #E0D8B0;
+    background-color: transparent;
+    color: #E0D8B0;
+    margin-right:110px;
+    position: relative;
+    display: flex;
+}
+
+.contenedor header .varmenu .barrabusqueda input{
+    width: 365px;
+    height: 28px;
+    padding: 0PX 20PX 0PX 25PX;
+    background-color: transparent;
+    color: #E0D8B0;
+    border-radius: 30px;
+    margin-right:10px;
+    position: relative;
+    display: flex;
+    border: none;
+}
+
+.contenedor header .varmenu .barrabusqueda input :active{
+    border: none;
+}
+
+::placeholder{
+    color: #E0D8B0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+#busqueda::-webkit-search-cancel-button{
+    position:relative;
+    right:20px;  
+
+    -webkit-appearance: none;
+}
+
+.contenedor header .varmenu .barrabusqueda .iconob i{
+   display: flex;
+   color: #E0D8B0;
+}
+
+
+
+.contenedor header .varmenu .barrabusqueda .iconob{
+    display: flex;
+    margin-top: 8px;
+}
+
+
+
+/*// NAV - BOTONES //*/
+
+.contenedor header .varmenu .menu nav{
+    display: flex;
+    width: 90%;
+    height: 65px;
+}
+
+
+.contenedor header .varmenu .menu nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+
+.contenedor header .varmenu .menu nav ul li{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin-left: 44px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.contenedor header .varmenu .menu nav ul li:hover{
+    transform: scale(108%);
+    box-shadow: 0px 2px 0px 4px rgba(36,36,36,0.99);
+
+}
+
+
+.contenedor header .varmenu .menu nav ul li a{
+    text-decoration: none;
+    color: #E0D8B0;
+}
+
+
+
+
+/* BOTON INICIAR SESION */
+
+.contenedor header .varmenu .menu nav ul a .btnlogin{
+    width: 35px;
+    height: 35px;
+    border: solid 1.5px #E0D8B0;
+    border-radius: 30px;
+}
+
+.contenedor header .varmenu .menu nav ul a{
+    text-decoration: none;
+    color: #E0D8B0;
+}
+
+
+.contenedor header .varmenu .menu nav ul .btnlogin:hover{
+    transform: scale(108%);
+}
+
+.contenedor header .varmenu .menu nav ul a .btnlogin i{
+    color: white;
+}
+
+
+/*ICONO MENU HAMBURGUESA*/
+
+.contenedor header .varmenu .menu nav i{
+    color: #E0D8B0;
+    display: none;
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.contenedor header .varmenu .menu nav .menucito a{    
+    text-decoration: none;}
+
+
+/* Del Menu Desplegado*/
+
+    .contenedor header .menuDesplegado ul{
+        display: none;
+    }
+
+
+/* BOLSA CARRITO */
+
+.contenedor header .varmenu .bolsacarrito{
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+.contenedor header .varmenu .bolsacarrito a img{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    color: #E0D8B0;
+    transition: all 0.5s;
+}
+
+.contenedor header .varmenu .bolsacarrito a img:hover{
+    transform: scale(110%);
+    box-shadow: 0px 2px 0px 3px rgba(31, 31, 31, 0.70);
+    border-radius: 20px;
+}
+
+.contenedor header .varmenu .bolsacarrito:hover .carritodesplegado{
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+    
+}
+
+
+.contenedor header .varmenu .bolsacarrito .carritodesplegado{
+    position: absolute;
+    background-color: #131212ee;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    width: 400px;
+    min-height: 130px;
+    max-height: 400px;
+    border-radius: 10px;
+    top: 100%;
+    right: 1.5%;
+    padding: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    overflow: auto;
+    z-index: 1;
+}
+
+.contenedor header .varmenu .menu .bolsacarrito .carritodesplegado h4{
+    color: #feffff;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+.contenedor header .varmenu .menu .carritodesplegado .btn-carrito{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 12px;
+    color: #feffff;
+    border: 1px solid #E0D8B0;
+    border-radius: 15px;
+    margin-top: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contenedor header .varmenu .menu .carritodesplegado .btn-carrito:hover{
+    background-color: #E0D8B0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(105%);
+    color: #000000;
+}
+
+
+
+
+
+/*// COVER HEADER //*/
+
+.contenedor .coverheader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 1vmin;
+    padding-top: 100px;
+    position: relative;
+    max-width: 1385px;
+    width: 100%;
+    min-height: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    transition: all 0.5s;
+
+   
+}
+
+.contenedor .coverheader h1{
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #E0D8B0;
+}
+
+.contenedor .coverheader p{
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #E0D8B0;
+}
+
+.contenedor .coverheader img{
+    max-width: 675px;
+    filter: drop-shadow(1px 1px 5px);
+    filter: contrast(1.1);
+    object-fit: cover;
+
+}
+
+.contenedor .coverheader button{
+    width: 240px;
+    height: 60px;
+    border-radius: 20px;
+    height: 75p;
+    background-color: #E0D8B0;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s;
+    
+}
+
+.contenedor .coverheader button:hover{
+   cursor: pointer;
+   box-shadow: 0px 7px 8px 0px rgba(12, 12, 12, 0.723);
+   transform: translateY(-5px);
+   background-color: #ede5c0;
+    
+}
+
+
+
+
+/*// Seccion Nosotros //*/
+
+.contenedor .secNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    padding: 1vmin;
+    width: 100%;
+    min-height:600px;
+    margin: 0 auto;
+    transition: all 0.5s;
+    position: relative;
+    margin-bottom: 100px;
+
+}
+
+.contenedor .secNosotros h1{
+    font-size: 35px;
+    color: #E0D8B0;
+    margin-bottom: 15px;
+}
+
+.contenedor .secNosotros .infonosotros{
+    font-size: 20px;
+    color: #CCC;
+    margin-bottom: 40px;
+    width: 80%;
+    text-align: center;
+}
+
+
+/* Mision, Vision y Valores */
+
+.contenedor .secNosotros .MVV{
+    justify-content: space-between;
+    display: flex;
+    width: 70%;
+    min-height: 350px;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+
+.contenedor .secNosotros .MVV h2{
+    font-size:28px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #E0D8B0;
+}
+
+.contenedor .secNosotros .MVV p{
+    font-size: 18px;
+    text-align: center;
+    color:  #CCC;
+    margin-bottom: 20px;
+}
+
+.contenedor .secNosotros .MVV .mision{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    width: 260px;
+    height: 350px;
+    border-radius: 20px;
+    border: solid 1px #E0D8B0;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.contenedor .secNosotros .MVV .mision i{
+    margin-top: 20px;
+    color: #c8c09dcc;
+    opacity: 0.4; /* El ícono se ve casi transparente */
+    transition: all 0.5s; /* Transición suave para el ícono */
+}
+
+.contenedor .secNosotros .MVV .vision{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    width: 260px;
+    height: 350px;
+    border-radius: 20px;
+    border: solid 1px #E0D8B0;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+
+.contenedor .secNosotros .MVV .vision i{
+    margin-top: 20px;
+    color: #c8c09dcc;
+    opacity: 0.4; /* El ícono se ve casi transparente */
+    transition: all 0.5s; /* Transición suave para el ícono */
+}
+
+.contenedor .secNosotros .MVV .valores{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    width: 260px;
+    height: 350px;
+    border-radius: 20px;
+    border: solid 1px #E0D8B0;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.contenedor .secNosotros .MVV .valores i{
+    margin-top: 36px;
+    color: #c8c09dcc;
+    opacity: 0.4; /* El ícono se ve casi transparente*/
+    transition: all 0.5s; /* Transición suave para el ícono */
+}
+
+
+
+/*// SECCION ACCESORIOS //*/
+
+.contenedor .secAccesorios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    padding: 1vmin;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+    transition: all 0.5s;
+    position: relative;
+    margin-bottom: 100px;
+
+
+}
+
+.contenedor .secAccesorios h1{
+    font-size: 40px;
+    color: #E0D8B0;
+    margin-bottom: 60px;
+}
+
+.contenedor .secAccesorios .gridAccesorios{
+    display: grid;
+    justify-content: space-around;
+    width: 70%;
+    min-height: 700px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 20px;
+    position: relative;
+    
+}
+
+
+.contenedor .secAccesorios .gridAccesorios img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+/*/ CADENAS /*/
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas{
+    background-color: aliceblue;
+    display: block;
+    grid-column: 1/3;
+    grid-row: 1/5;
+    border: solid #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+
+
+}
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas .nombrecarta1{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+
+}
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas .cardinfo1{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 70px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas .nombrecarta1sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 70%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+/*/ Efecto oscuro en la card /*/
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.092); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -180px 150px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+  /*/ ANILLOS /*/
+
+
+.contenedor .secAccesorios .gridAccesorios .anillos{
+    background-color: green;
+    display: block;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+
+}
+
+.contenedor .secAccesorios .gridAccesorios .anillos .nombrecarta2{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    text-align: center;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    transition: all 0.8s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .anillos .cardinfo2{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .anillos .nombrecarta2sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+/*/ Efecto oscuro en la card /*/
+
+.contenedor .secAccesorios .gridAccesorios .anillos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -100px 120px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+ /*/ RELOJES /*/
+  
+.contenedor .secAccesorios .gridAccesorios .relojes{
+    background-color: bisque;
+    display: block;
+    grid-column: 5/7;
+    grid-row: 1/3;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.contenedor .secAccesorios .gridAccesorios .relojes .nombrecarta3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+.contenedor .secAccesorios .gridAccesorios .relojes .cardinfo3{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .relojes .nombrecarta3sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .relojes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -100px 120px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+   /*/ ARETES /*/
+
+.contenedor .secAccesorios .gridAccesorios .aretes{
+    background-color: pink;
+    display: block;
+    grid-column: 1/3;
+    grid-row: 5/7;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .aretes .nombrecarta4{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .aretes .cardinfo4{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.5s;
+
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .aretes .nombrecarta4sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.contenedor .secAccesorios .gridAccesorios .aretes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.177); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -100px 100px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+   /*/ Tobilleras /*/
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras{
+    background-color: yellow;
+    display: block;
+    grid-column: 5/7;
+    grid-row: 3/5;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras .nombrecarta5{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras .cardinfo5{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.5s;
+
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras .nombrecarta5sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.066); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -90px 100px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+ /*/ PULSERAS /*/
+
+
+.contenedor .secAccesorios .gridAccesorios .pulseras{
+    background-color: black;
+    display: block;
+    grid-column: 3/5;
+    grid-row: 3/7;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .pulseras .nombrecarta6{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+}
+
+
+.contenedor .secAccesorios .gridAccesorios .pulseras .cardinfo6{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 70px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .pulseras .nombrecarta6sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 70%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+
+}
+
+
+
+.contenedor .secAccesorios .gridAccesorios .pulseras::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.07); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -180px 90px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+   /*/ CHAMS /*/
+
+.contenedor .secAccesorios .gridAccesorios .charms{
+    background-color: purple;
+    display: block;
+    grid-column: 5/7;
+    grid-row: 5/7;
+    border: solid 2px #E0D8B0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .charms .nombrecarta7{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.8s;
+}
+
+.contenedor .secAccesorios .gridAccesorios .charms .cardinfo7{
+    color: #E0D8B0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0; /* El ícono está oculto por defecto */
+    transition: all 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.5s;
+
+}
+
+
+/* Nombre oculto para el efecto Hover */
+
+.contenedor .secAccesorios .gridAccesorios .charms .nombrecarta7sec h3{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: #E0D8B0;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.contenedor .secAccesorios .gridAccesorios .charms::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.185); /* Fondo oscuro con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    pointer-events: none; /* Asegura que no interfiera con la interacción */
+    z-index: 1;  /* Asegura que la sombra esté por encima de la imagen, pero debajo del contenido */
+    box-shadow: inset 0 -100px 100px rgba(0, 0, 0, 0.914); /* Sombra interna difusa */
+  }
+
+
+
+
+
+
+/*Hover*/
+
+.contenedor .secNosotros .MVV .mision:hover{
+    transform:translateY(-10px);
+    box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .secNosotros .MVV .mision:hover i{
+   opacity: 1;
+   color: #c8c09d;
+}
+
+.contenedor .secNosotros .MVV .vision:hover{
+    transform:translateY(-10px);
+    box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .secNosotros .MVV .vision:hover i{
+   opacity: 1;
+   color: #c8c09d;
+}
+
+.contenedor .secNosotros .MVV .valores:hover{
+    transform:translateY(-10px);
+    box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .secNosotros .MVV .valores:hover i{
+   opacity: 1;
+   color: #c8c09d;
+}
+
+
+/* Hover Cadenas Card */
+
+.contenedor .secAccesorios .gridAccesorios .Cadenas:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .Cadenas:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .Cadenas:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .Cadenas:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .Cadenas:hover .cardinfo1{
+    opacity: 1;
+ }
+
+
+
+/*Hover Anillos*/
+
+.contenedor .secAccesorios .gridAccesorios .anillos:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .anillos:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .anillos:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .anillos:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .anillos:hover .cardinfo2{
+    opacity: 1;
+ }
+
+
+
+
+
+ /*Hover Relojes*/
+
+.contenedor .secAccesorios .gridAccesorios .relojes:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .relojes:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .relojes:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .relojes:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .relojes:hover .cardinfo3{
+    opacity: 1;
+ }
+
+
+
+ /*Hover aretes*/
+
+.contenedor .secAccesorios .gridAccesorios .aretes:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .aretes:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .aretes:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .aretes:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .aretes:hover .cardinfo4{
+    opacity: 1;
+ }
+ 
+
+
+ /* Hover Pulseras */
+
+.contenedor .secAccesorios .gridAccesorios .pulseras:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .pulseras:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .pulseras:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .pulseras:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .pulseras:hover .cardinfo6{
+    opacity: 1;
+ }
+
+
+/*Hover Tobilleras*/
+
+.contenedor .secAccesorios .gridAccesorios .tobilleras:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .tobilleras:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .tobilleras:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .tobilleras:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .tobilleras:hover .cardinfo5{
+    opacity: 1;
+ }
+
+
+
+
+/*Hover Chams*/
+
+.contenedor .secAccesorios .gridAccesorios .charms:hover{
+    transform: scale(102%);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.215);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .charms:hover h2{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 0;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .charms:hover h3{
+    /*transform: translateY(-90px);
+    transition: all 0.5s;*/
+    opacity: 1;
+
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .charms:hover::before{
+    box-shadow: inset 0 -260px 160px rgba(0, 0, 0, 0.914);
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .contenedor .secAccesorios .gridAccesorios .charms:hover .cardinfo7{
+    opacity: 1;
+ }
+
+
+
+ footer{
+    width: 100%;
+    height: 460px;
+    background-color: #1a1a1a;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+
+ }
+
+ footer .infoFooter{
+    width: 100%;
+    height: 70%;
+    align-items:normal;
+    justify-content: space-around;
+    display: flex;
+
+ }
+
+ footer .infoFooter ul {
+    text-decoration: none;
+    list-style: none;
+
+
+ }
+
+footer .infoFooter ul li{
+    Margin-bottom: 20px;
+    color: #E0D8B0;
+    font-size: 12px;
+}
+
+
+ footer .infoFooter ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #EAE7D5;
+    font-weight: 600;
+    
+ }
+
+ footer ul li a i{
+    margin-right: 10px;
+    color: #E0D8B0;
+    margin-bottom: 10px;
+ }
+
+ footer p{
+    color: #E0D8B0;
+    font-size: 16px;
+ }
+
+
+
+
+
+
+
+/* MEDIA */
+
+@media (max-width:1920px){
+    .contenedor .coverheader img{
+        width: 675px;
+    }
+}
+
+
+@media (max-width:1137px){
+
+    .contenedor .coverheader{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .contenedor .coverheader button{
+        margin-bottom: 40px;
+    }
+
+    .contenedor .coverheader img{
+        max-width: 490px;
+        margin: 0 auto;
+    }
+
+
+    .contenedor .coverheader button{
+        margin-bottom: 40px;
+    }
+
+    .contenedor .coverheader h1{
+        margin-top: 40px;
+    }
+    
+
+}
+
+
+@media (max-width:1378px){
+    
+    .varmenu ul li{
+        display: none;
+    }
+
+    .contenedor header .varmenu .bolsacarrito a img{
+        display: none;
+    }
+
+    .contenedor header .varmenu .menu nav i{
+        display: flex;
+        margin: 0;
+    }
+
+    .contenedor .coverheader .infocover{
+        margin-left: 3%;
+    }
+
+    .contenedor .coverheader h1{
+        margin-left: 0;
+    }
+
+    .contenedor .coverheader p{
+        margin-left: 0;
+    }
+
+    .contenedor .coverheader button{
+        margin-left: 0;
+    }
+
+    .contenedor .coverheader img{
+        margin: 0 auto;
+        transform: translate(-50% -50%);
+    }
+
+    .contenedor header .varmenu .barrabusqueda{
+        position: absolute;
+        left: 52%;
+        right: 48%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
+        margin: 0 auto;
+    }
+
+    .contenedor header .varmenu .barrabusqueda .iconob i{
+        right: 10%;
+    }
+
+    .contenedor header .varmenu .logoheader img{
+        position: absolute;
+        left: 1%;
+        top: 3%;
+    }
+
+    /*// MENU HAMBURGUESA DESPLEGADO//*/
+
+    .contenedor header .menuDesplegado{
+        background-color: #242424;
+        inset: 0;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        display: flex;
+        transition: all 0.5s ease;
+        transform: translateY(-1080px);
+    }
+    
+    .contenedor header .menuDesplegado ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .contenedor header .menuDesplegado ul li {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        margin-bottom: 40px;
+        font-size: 40px;
+        transition: all 0.3s;
+        display: flex;
+    
+    }
+    
+    .contenedor header .menuDesplegado ul .bolsaM{
+        position: relative;
+        display: flex;
+        margin-top: 40px;
+        margin-right: 20px;
+    }
+    
+    .contenedor header .menuDesplegado ul li a{
+        color: #E0D8B0;
+        text-decoration: none;
+        transform: translate(-50% -50%);
+    }
+    
+    .contenedor header .menuDesplegado ul img{
+        width: 75px;
+        height: 70px;
+        display: flex;
+        position: relative;
+        transition: all 0.5s;
+    
+    }
+    
+    .contenedor header .menuDesplegado ul .bolsamenur{
+        width: 240px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    
+    
+    
+    .contenedor header .varmenu .menuDesplegado ul a .btnlogin{
+        width: 250px;
+        height: 70px;
+        border: solid 1.5px #E0D8B0;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    
+    .contenedor header .varmenu .menuDesplegado ul a{
+        text-decoration: none;
+        color: #E0D8B0;
+    }
+    
+    .contenedor header .varmenu .menuDesplegado i{
+        position: absolute;
+        color: #E0D8B0;
+        top: 10%;
+        right: 10%;
+        cursor: pointer;
+    }
+
+    
+
+  
+
+    /* Para javascript */
+    
+    #menu.show{
+    display: flex;
+    transform: translateY(0px);
+    transition: all 0.5s ease;
+    }
+
+
+}
+
+@media (max-width:1089px){
+
+    .contenedor .coverheader h1{
+        font-size: 48px;
+    }
+
+    .contenedor .coverheader p{
+        font-size: 15px;
+    }
+
+    .contenedor .secNosotros .infonosotros{
+        max-width: 550px;
+    }
+
+    .contenedor .secNosotros h1{
+        text-align: center;
+        
+    }
+
+    .contenedor .secNosotros .MVV{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .contenedor .secNosotros .MVV .mision{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 300px;
+        height: 380px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+
+    .contenedor .secNosotros .MVV h2{
+        font-size: 30px;
+    }
+
+    .contenedor .secNosotros .MVV p{
+        font-size: 20px;
+    }
+
+    .contenedor .secNosotros .MVV .vision{
+        margin-bottom: 30px;
+        width: 300px;
+        height: 380px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+    .contenedor .secNosotros .MVV .valores{
+        margin-bottom: 30px;
+        width: 300px;
+        height: 380px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+
+    .contenedor .secAccesorios .gridAccesorios{
+    display: grid;
+    justify-content: space-around;
+    width: 60%;
+    min-height: 1100px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(11,1fr);
+    grid-gap: 20px;
+    position: relative;
+    }
+
+    .contenedor .secAccesorios .gridAccesorios h3{
+        display: none;
+    }
+
+
+    .contenedor .secAccesorios .gridAccesorios .relojes{
+        background-color: bisque;
+        display: block;
+        grid-column: 1/3;
+        grid-row: 7/9;
+        border: solid 2px #E0D8B0;
+        border-radius: 20px;
+        position: relative;
+    
+    }
+
+    .contenedor .secAccesorios .gridAccesorios .tobilleras{
+        grid-column: 3/5;
+        grid-row: 7/9;
+    
+    }
+
+
+    .contenedor .secAccesorios .gridAccesorios .charms{
+        grid-column: 1/3;
+        grid-row: 9/11;
+    
+    }
+    
+
+}
+
+@media (max-width:1270px){
+    .contenedor .coverheader img{
+        width: 600px;
+    }
+}
+
+
+
+@media (max-width:1037px){
+    .contenedor .coverheader img{
+        width: 540px;
+    }
+}
+
+
+@media (max-width:840px){
+    footer{
+        height: auto;
+    }
+
+    footer .infoFooter{
+        flex-wrap: wrap;
+        align-items: center;
+        width: 420px;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+
+    .infoFooter ul{
+        margin-right: 80px;
+    }
+
+    footer p{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+@media (max-width:548px){
+    .contenedor header .varmenu .barrabusqueda{
+        display: none;
+    }
+
+    .contenedor header .varmenu .barrabusqueda input{
+        display: none;
+    }
+
+    .contenedor .coverheader img{
+        width: 360px;
+    }
+
+
+    /* Disminucion de las cards accesorios */
+
+    .contenedor .secAccesorios .gridAccesorios{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(12,1fr);
+
+        }
+    
+        .contenedor .secAccesorios .gridAccesorios h3{
+            display: none;
+        }
+
+        .contenedor .secAccesorios .gridAccesorios h2{
+            font-size: 18px;
+        }
+
+
+        .contenedor .secAccesorios .gridAccesorios p{
+            font-size: 13px;
+        }
+
+        .contenedor .secAccesorios .gridAccesorios .Cadenas{
+            grid-column: 1/3;
+            grid-row: 1/4;
+
+        }
+
+        .contenedor .secAccesorios .gridAccesorios .aretes{
+            grid-column: 1/3;
+            grid-row: 4/6;
+            
+        }
+
+        .contenedor .secAccesorios .gridAccesorios .pulseras{
+            grid-column: 3/5;
+            grid-row: 3/6;
+        }
+    
+    
+        .contenedor .secAccesorios .gridAccesorios .relojes{
+            grid-column: 1/3;
+            grid-row: 6/8;
+        
+        }
+    
+        .contenedor .secAccesorios .gridAccesorios .tobilleras{
+            grid-column: 3/5;
+            grid-row: 6/8;
+        
+        }
+    
+    
+        .contenedor .secAccesorios .gridAccesorios .charms{
+            grid-column: 1/3;
+            grid-row: 8/10;
+        }
+}
+
+
+@media (max-width:395px){
+   
+    .contenedor .coverheader img{
+        width: 250px;
+    }
+
+    .contenedor .coverheader h1{
+        font-size: 40px;
+    }
+
+    .contenedor .coverheader p{
+        font-size: 12px;
+    }
+
+    .contenedor .secNosotros .infonosotros{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+
+
+    .contenedor .secNosotros .MVV .mision{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 240px;
+        height: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+
+    .contenedor .secNosotros .MVV h2{
+        font-size: 28px;
+    }
+
+    .contenedor .secNosotros .MVV p{
+        font-size: 16px;
+    }
+
+    .contenedor .secNosotros .MVV .vision{
+        margin-bottom: 30px;
+        width: 240px;
+        height: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+    .contenedor .secNosotros .MVV .valores{
+        margin-bottom: 30px;
+        width: 240px;
+        height: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+}
+
