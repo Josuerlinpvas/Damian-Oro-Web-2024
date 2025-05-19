@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register Web</title>
+    <link rel="stylesheet" href="css/Registrar.css">
+    <script src="https://kit.fontawesome.com/31b0cf8a48.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="register">
+
+        <form action="" class="registerForm" id="registerForm">
+            <h1>Registrate</h1>
+            <div class="registerOptions">
+                <a href="#"><i class="fa-brands fa-google-plus-g fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-apple fa-2x"></i></a>
+            </div>
+
+            <div class="InputNamw">
+                <input type="text" id="name" name="name" 
+                placeholder="Nombre de Usaurio" required class="inputN">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            
+            <div class="InputEmail">
+                <input type="text" id="email" name="email" 
+                placeholder="Correo electrónico" required class="inputE">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="inputpass">
+                <input type="password" id="password" name="password"
+                placeholder="Contraseña" required class="inputP">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="rememberMe">
+                <input type="checkbox" id="Acepto" name="Acepto" required><label for="Acepto">Acepto los Terminos y Condiciones.</label></input>
+            </div>
+            
+            <div class="botonregister">
+                <input type="submit" value="Registrarme" ></input>
+            </div>
+
+            <div class="Registrar">
+                <p>¿Ya tienes una cuenta?</p> <a href="login.html">Iniciar Sesión</a>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="Js/register.js"></script>
+</body>
+</html>
