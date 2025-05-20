@@ -10,6 +10,13 @@
 </head>
 <body>
 
+    <div id="loader">
+    <div class="spinner"></div>
+    <p>Cargando...</p>
+  </div>
+
+ <div class="fade-wrapper">
+
     <div class="contenedor">
 
         <header>
@@ -47,7 +54,7 @@
                             
                                 <div class="accoutOptions" id="accoutOptions">
                                     <button class="btnCuenta">Mi Cuenta</button>
-                                    <button class="btnSalir" onclick="logout()">Salir</button>
+                                    <button class="btnSalir" id="btnSalir">Salir</button>
                                 </div>
                             
                             </li>
@@ -64,7 +71,7 @@
 
                                 <h4 class="TituloCarrito">Bolsa de Compras</h4>
 
-                                 <div class="articulosCarrito">
+                                 <div class="articulosCarrito" id="allcartcontent">
 
                                    <!-- <div class="articulo">
                                         <img class="imgproductocarrito" src="img/SitioGaleria/Cadenaoro1.jpeg" alt="">
@@ -173,7 +180,7 @@
             </div>
 
 
-            <img src="img/headerimg.png">
+            <img src="img/headerimg2.png">
         </div>  
 
 
@@ -332,31 +339,31 @@
           
         <ul>
             <li> <h1>Empresa</h1> </li>
-            <li><a href="contacto.html">Nosotros</a></li>
-            <li><a href="#secAccesorios">Servicios</a></li>
-            <li><a href="#secAccesorios">Contacto</a></li>
+            <li class="footeroptions"><a href="#secNosotros">Nosotros</a></li>
+            <li class="footeroptions"><a href="#secAccesorios">Servicios</a></li>
+            <li class="footeroptions"><a href="contacto.html">Contacto</a></li>
         </ul>
 
         <ul>
             <li> <h1>Accesorios</h1></li>
-            <li><a href="accesorios.html?tipo=cadena">Cadenas</a></li>
-            <li><a href="accesorios.html?tipo=Anillos">Anillos</a></li>
-            <li><a href="accesorios.html">Mas...</a></li>
+            <li class="footeroptions"><a href="accesorios.html?tipo=cadena">Cadenas</a></li>
+            <li class="footeroptions"><a href="accesorios.html?tipo=Anillos">Anillos</a></li>
+            <li class="footeroptions"><a href="accesorios.html">Mas...</a></li>
         </ul>
 
         <ul>
             <li><h1>Ayuda</h1></li>
-            <li><a href="#">Manual de uso</a></li>
-            <li><a href="contacto.html">Comentarios</a></li>
-            <li><a href="contacto.html">Reportar error</a></li>
+            <li class="footeroptions"><a href="#">Manual de uso</a></li>
+            <li class="footeroptions"><a href="contacto.html">Comentarios</a></li>
+            <li class="footeroptions"><a href="contacto.html">Reportar error</a></li>
         </ul>
 
         <ul>
             <li><h1>Siguenos</h1></li>
-            <li class="red1">
-                <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a> 
-                <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a> 
-                <a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            <li class="red1" class="footeroptions">
+                <a href="https://www.instagram.com/damian_oro_official/"><i class="fa-brands fa-instagram fa-2x"></i></a> 
+                <a href="https://www.facebook.com/damianbritoa"><i class="fa-brands fa-facebook fa-2x"></i></a> 
+                <a href="https://wa.link/xlhqvk"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
             </li>
         
         </ul>
@@ -366,9 +373,15 @@
         <p>All Right Reserved ©</p>
 
     </footer>
+
+
+    </div>
     
 
+<script src="js/Transitions.js"></script>
 <script src="js/js.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/carrito.js"></script>
 
 </body>
 </html>

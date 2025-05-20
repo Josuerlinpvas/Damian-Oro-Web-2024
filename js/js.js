@@ -1,3 +1,6 @@
+
+
+
 const iconoMenu = document.querySelector('#icono-menu'),
       links = document.querySelectorAll('#lista-menu'),
       menu = document.querySelector('#menu');
@@ -23,28 +26,38 @@ const iconoMenu = document.querySelector('#icono-menu'),
         const loginButton = document.getElementById('btnlogin');
         const accountIcon = document.getElementById('AccountIcon');
         const iconoContadorBolsa = document.getElementById('contadorBolsa');
+        const allcartcontent = document.getElementById('allcartcontent');
     
         if (loggedIn === 'true') {
             // Si está logueado, oculta el botón de login y muestra el icono de cuenta
             loginButton.style.display = 'none';
             accountIcon.style.display = 'block';
-            contadorBolsa.style.display = 'flex'
+            contadorBolsa.style.display = 'flex';
+            allcartcontent.style.display = 'flex';
 
         } else {
             loginButton.style.display = 'block';
             accountIcon.style.display = 'none';
             contadorBolsa.style.display = 'none'
+            allcartcontent.style.display = 'none';
         }
     };
 
 
 
-    function logout() {
+    const cerrarSesion = document.getElementById("btnSalir").addEventListener("click", ()=>{
+      swal.fire({
+            title: 'Sesion Cerrada!',
+            icon:'warning',
+            background: 'rgb(255, 255, 255)',
+            timer: '5000',
+        }).then(() => {
+ 
+    localStorage.removeItem('loggedIn');
+    window.location.href = 'index.html';
+  });
+});
   
-      alert("Sesión Cerrada!")
-      localStorage.removeItem('loggedIn');
-      window.location.href = 'index.html';
-  }
 
 
   const botonCuenta = document.getElementById("AccountIcon").addEventListener("click", ()=> {

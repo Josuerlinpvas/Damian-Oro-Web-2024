@@ -1,3 +1,4 @@
+
 const registrate = document.querySelector("#registerForm");
 registrate.addEventListener('submit', (e)=>{
     e.preventDefault()
@@ -8,12 +9,22 @@ registrate.addEventListener('submit', (e)=>{
     const Users = JSON.parse(localStorage.getItem('Users')) || [];
     const IsUserRegistered = Users.find(user => user.email === email);
     if(IsUserRegistered){
-        return alert('El usuario ya existe!')
+        return swal.fire({
+            title: 'El Usuario ya Existe!',
+            icon:'error',
+            background: 'rgb(255, 255, 255)',
+            timer:5000,
+            timerProgressBar: true
+        });
     }
 
     Users.push({name: name, email: email, password: password})
     localStorage.setItem('Users', JSON.stringify(Users))
-    alert('Registro Exitoso!')
+     swal.fire({
+            title: 'Registro Exitoso!',
+            icon:'succefull',
+            background: 'rgb(255, 255, 255)',
+        });
     window.location.href = "login.html";
 
 
