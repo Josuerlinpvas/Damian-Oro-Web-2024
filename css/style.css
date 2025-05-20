@@ -1654,24 +1654,63 @@ footer .infoFooter .footeroptions:hover{
 
     }
 
-    .contenedor .coverheader button{
-        margin-bottom: 40px;
-    }
-
     .contenedor .coverheader img{
-        max-width: 490px;
+        width: 85% !important;
+        height: 100% !important;
         margin: 0 auto;
     }
 
 
     .contenedor .coverheader button{
-        margin-bottom: 40px;
+        margin-bottom: 80px;
+         width: 70% !important;
+         height: 80px;
+         border-radius: 20px;
+         font-size: 25px;
     }
 
     .contenedor .coverheader h1{
-        margin-top: 40px;
+        margin-top: 80px;
+        font-size: 500%;
+    }
+
+    .contenedor .coverheader p{
+        font-size: 25px;
+    }
+
+    .contenedor .varmenu{
+        margin-top: 50px !important;
+        height: 90px !important;
+        background-color: #242424;
+    }
+
+    .contenedor .varmenu .barrabusqueda{
+        width: 60% !important;
+        height: 48px !important;
     }
     
+    .contenedor .varmenu .logoheader img{
+        left: 50px !important;
+        top: 15px !important;
+    }
+
+    .contenedor .varmenu .menucito i{
+        right: 50px !important;
+    }
+
+    .contenedor .varmenu .barrabusqueda i{
+        font-size: 20px !important;
+        margin-top:20% !important;
+        left: 110% !important;
+    }
+
+     .contenedor .varmenu .barrabusqueda input{
+        width: 90% !important;
+        height: 100% !important;
+        font-size: 20px;
+     };
+
+
 
 }
 
@@ -1742,7 +1781,11 @@ footer .infoFooter .footeroptions:hover{
         list-style: none;
         display: flex;
         transition: all 0.5s ease;
-        transform: translateY(-1080px);
+        transform: translateY(-2000px);
+    }
+
+    #btnlogina{
+        display: none;
     }
     
     .contenedor header .menuDesplegado ul{
@@ -1839,22 +1882,31 @@ footer .infoFooter .footeroptions:hover{
 
 }
 
-@media (max-width:1089px){
+ @media (max-width:1089px){
 
     .contenedor .coverheader h1{
-        font-size: 48px;
+        font-size: 430%;
     }
 
     .contenedor .coverheader p{
-        font-size: 15px;
+        font-size: 20px;
     }
 
+     .contenedor .coverheader img{
+        margin-bottom: 20px;
+     }
+
     .contenedor .secNosotros .infonosotros{
-        max-width: 550px;
+        max-width: 580px;
+        font-size: 25px;
+        text-align: justify;
     }
 
     .contenedor .secNosotros h1{
         text-align: center;
+        font-size: 45px;
+        margin-bottom: 30px;
+        width: 80%;
         
     }
 
@@ -1863,50 +1915,67 @@ footer .infoFooter .footeroptions:hover{
         justify-content: center;
         align-items: center;
         margin-bottom: 100px;
+        width: 80%;
     }
 
     .contenedor .secNosotros .MVV .mision{
         margin-bottom: 30px;
         margin-top: 30px;
-        width: 300px;
-        height: 380px;
+        width: 75%;
+        height: 600px;
+        padding-top: 40px;
         padding-left: 15px;
         padding-right: 15px;
         border-radius: 30px;
+         box-shadow: 5px 8px 5px 10px rgba(26, 26, 26, 0.712);
     }
 
 
     .contenedor .secNosotros .MVV h2{
-        font-size: 30px;
+        font-size: 45px;
+        margin-bottom: 30px;
     }
 
     .contenedor .secNosotros .MVV p{
-        font-size: 20px;
+        font-size: 30px;    
+        
+        width: 90%;
     }
 
-    .contenedor .secNosotros .MVV .vision{
+    .contenedor .secNosotros .MVV i{
+        font-size: 75px;
+        opacity: 0.8 !important;
+    }
+
+     .contenedor .secNosotros .MVV .vision{
         margin-bottom: 30px;
-        width: 300px;
-        height: 380px;
+        margin-top: 30px;
+         width: 75%;
+        height: 600px;
+        padding-top: 40px;
         padding-left: 15px;
         padding-right: 15px;
         border-radius: 30px;
+         box-shadow: 5px 8px 5px 10px rgba(26, 26, 26, 0.712);
     }
 
-    .contenedor .secNosotros .MVV .valores{
+     .contenedor .secNosotros .MVV .valores{
         margin-bottom: 30px;
-        width: 300px;
-        height: 380px;
+        margin-top: 30px;
+         width: 75%;
+        height: 600px;
+        padding-top: 40px;
         padding-left: 15px;
         padding-right: 15px;
         border-radius: 30px;
+         box-shadow: 5px 8px 5px 10px rgba(26, 26, 26, 0.712);
     }
 
 
     .contenedor .secAccesorios .gridAccesorios{
     display: grid;
     justify-content: space-around;
-    width: 60%;
+    width: 80%;
     min-height: 1100px;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(11,1fr);
@@ -1944,21 +2013,8 @@ footer .infoFooter .footeroptions:hover{
     }
     
 
-}
+} 
 
-@media (max-width:1270px){
-    .contenedor .coverheader img{
-        width: 600px;
-    }
-}
-
-
-
-@media (max-width:1037px){
-    .contenedor .coverheader img{
-        width: 540px;
-    }
-}
 
 
 @media (max-width:840px){
@@ -1983,27 +2039,110 @@ footer .infoFooter .footeroptions:hover{
     }
 }
 
+@media (max-width:647px){
+
+    .contenedor .varmenu .barrabusqueda input{
+        width: 86% !important;
+    }
+
+   .contenedor .coverheader h1{
+        font-size: 350%;
+    }
+    .contenedor .coverheader p{
+        font-size: 18px;
+    }
+
+    .contenedor .coverheader button{
+        width: 250px !important;
+        height: 60px !important;
+        font-size: 20px;
+
+    }
+
+
+    .contenedor .secNosotros .MVV{
+        width: 90%;
+    }
+
+    .contenedor .secNosotros .MVV .mision{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 75%;
+        height: 550px;
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+         box-shadow: 5px 8px 5px 10px rgba(26, 26, 26, 0.712);
+    }
+
+
+    .contenedor .secNosotros .MVV h2{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    .contenedor .secNosotros .MVV p{
+        font-size: 25px;    
+        width: 90%;
+    }
+
+    .contenedor .secNosotros .MVV i{
+        font-size: 75px;
+        opacity: 0.8 !important;
+    }
+
+     .contenedor .secNosotros .MVV .vision{
+        margin-bottom: 30px;
+        margin-top: 30px;
+         width: 75%;
+         height: 550px;
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+         box-shadow: 5px 8px 5px 10px rgba(26, 26, 26, 0.712);
+    }
+
+     .contenedor .secNosotros .MVV .valores{
+        margin-bottom: 30px;
+        margin-top: 30px;
+         width: 75%;
+        height: 550px;
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+         box-shadow: 5px 8px 5px 10px rgba(26, 26, 26, 0.712);
+    }
+
+}
+
 
 
 @media (max-width:548px){
     .contenedor header .varmenu .barrabusqueda{
-        display: none;
+        width: 50% !important;  
     }
 
-    .contenedor header .varmenu .barrabusqueda input{
-        display: none;
-    }
 
-    .contenedor .coverheader img{
-        width: 360px;
-    }
+.contenedor .secAccesorios{
+    height: 2800px;
+}
+
+.contenedor .secAccesorios h1{
+    font-size: 50px;
+}
 
 
     /* Disminucion de las cards accesorios */
 
     .contenedor .secAccesorios .gridAccesorios{
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(12,1fr);
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(15,1fr);
+        margin-right: 6%;
+        row-gap: 30px;  
+        width: 80%;
 
         }
     
@@ -2012,7 +2151,8 @@ footer .infoFooter .footeroptions:hover{
         }
 
         .contenedor .secAccesorios .gridAccesorios h2{
-            font-size: 18px;
+            font-size: 30px;
+            margin-bottom: 20px;
         }
 
 
@@ -2021,41 +2161,106 @@ footer .infoFooter .footeroptions:hover{
         }
 
         .contenedor .secAccesorios .gridAccesorios .Cadenas{
-            grid-column: 1/3;
-            grid-row: 1/4;
+           grid-column: 3/5;
+            grid-row: 8/11;
+
+        }
+
+          .contenedor .secAccesorios .gridAccesorios .anillos{
+           grid-column: 3/5;
+            grid-row: 4/6;
 
         }
 
         .contenedor .secAccesorios .gridAccesorios .aretes{
-            grid-column: 1/3;
-            grid-row: 4/6;
+            grid-column: 3/5;
+            grid-row: 13/15;
             
         }
 
         .contenedor .secAccesorios .gridAccesorios .pulseras{
             grid-column: 3/5;
-            grid-row: 3/6;
+            grid-row: 1/4;
         }
     
     
         .contenedor .secAccesorios .gridAccesorios .relojes{
-            grid-column: 1/3;
-            grid-row: 6/8;
+            grid-column: 3/5;
+             grid-row: 6/8;
         
         }
     
         .contenedor .secAccesorios .gridAccesorios .tobilleras{
             grid-column: 3/5;
-            grid-row: 6/8;
+            grid-row: 11/13;
         
         }
     
     
         .contenedor .secAccesorios .gridAccesorios .charms{
-            grid-column: 1/3;
-            grid-row: 8/10;
+            grid-column: 3/5;
+            grid-row: 15/16;
+        }
+
+        .contenedor .secNosotros{
+            margin-bottom: 0px !important;
         }
 }
+
+
+
+@media (max-width:511px){
+   
+
+    .contenedor .secNosotros .MVV .mision{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 70%;
+        height: 420px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+
+    .contenedor .secNosotros .MVV h2{
+        font-size: 35px;
+    }
+
+    .contenedor .secNosotros .MVV p{
+        font-size: 18px;
+    }
+
+      .contenedor .secNosotros .MVV i{
+        font-size: 50px;
+    }
+
+
+    .contenedor .secNosotros .MVV .vision{
+        margin-bottom: 30px;
+          width: 70%;
+        height: 420px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+    .contenedor .secNosotros .MVV .valores{
+        margin-bottom: 30px;
+         width: 70%;
+        height: 420px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+    .contenedor .logoheader{
+        display: none;
+    }
+
+}
+
+
 
 
 @media (max-width:395px){
