@@ -1679,7 +1679,7 @@ footer .infoFooter .footeroptions:hover{
     }
 
     .contenedor .varmenu{
-        margin-top: 50px !important;
+        margin-top: 30px !important;
         height: 90px !important;
         background-color: #242424;
     }
@@ -1867,9 +1867,6 @@ footer .infoFooter .footeroptions:hover{
         cursor: pointer;
     }
 
-    
-
-  
 
     /* Para javascript */
     
@@ -2025,14 +2022,19 @@ footer .infoFooter .footeroptions:hover{
     footer .infoFooter{
         flex-wrap: wrap;
         align-items: center;
-        width: 420px;
+        width: 120%;
         justify-content: space-around;
         margin-bottom: 40px;
     }
 
     .infoFooter ul{
-        margin-right: 80px;
+        width: 150px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        flex-direction: column;
     }
+
 
     footer p{
         margin-bottom: 40px;
@@ -2040,6 +2042,10 @@ footer .infoFooter .footeroptions:hover{
 }
 
 @media (max-width:647px){
+
+     .contenedor .varmenu .barrabusqueda{
+        width: 50% !important;
+     }
 
     .contenedor .varmenu .barrabusqueda input{
         width: 86% !important;
@@ -2053,8 +2059,8 @@ footer .infoFooter .footeroptions:hover{
     }
 
     .contenedor .coverheader button{
-        width: 250px !important;
-        height: 60px !important;
+        width: 60% !important;
+        height: 55px !important;
         font-size: 20px;
 
     }
@@ -2205,6 +2211,15 @@ footer .infoFooter .footeroptions:hover{
         .contenedor .secNosotros{
             margin-bottom: 0px !important;
         }
+
+        footer .infoFooter{
+            height: auto !important;
+        }
+
+        footer{
+            padding: 100px !important;
+
+        }
 }
 
 
@@ -2254,23 +2269,64 @@ footer .infoFooter .footeroptions:hover{
         border-radius: 30px;
     }
 
-    .contenedor .logoheader{
-        display: none;
+    .contenedor .logoheader #imglogo{
+        left: 15px !important;
+        height: 55px;
     }
+
+    .contenedor #barrabusqueda{
+        height: 50% !important;
+        width: 40% !important;
+    }
+
+    .contenedor .varmenu #menucito{
+        right: 5% !important;
+    }
+
+    .contenedor .coverheader h1{
+        font-size: 40px !important;
+        margin-top: 40px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .contenedor .coverheader p{
+        font-size: 12px;
+        margin-bottom: 30px !important;
+    }
+
+    .contenedor .coverheader button{
+        height: 45px !important;
+        border-radius: 15px !important;
+        font-size: 14px;
+    }
+
+    .contenedor .varmenu .barrabusqueda i{
+        font-size: 16px !important;
+        margin-right: 10px !important;
+    }
+
+    .contenedor .secNosotros h1{
+        font-size: 30px !important;
+    }
+
+     .contenedor .secNosotros p{
+        font-size: 16px !important;
+     }
 
 }
 
 
 
 
-@media (max-width:395px){
+@media (max-width:400px){
    
     .contenedor .coverheader img{
         width: 250px;
     }
 
     .contenedor .coverheader h1{
-        font-size: 40px;
+        font-size: 32px !important;
+        margin-top: 10px !important;
     }
 
     .contenedor .coverheader p{
@@ -2319,6 +2375,36 @@ footer .infoFooter .footeroptions:hover{
         padding-left: 15px;
         padding-right: 15px;
         border-radius: 30px;
+    }
+    
+    .contenedor .secNosotros .MVV i{
+        display: none;
+    }
+
+    .contenedor .varmenu {
+        margin-top: 10px !important;
+    }
+
+    .contenedor .varmenu #barrabusqueda{
+        height: 30px !important;
+    }
+
+    .contenedor .varmenu .barrabusqueda input{
+        font-size: 16px !important;
+    }
+
+    .contenedor .varmenu .barrabusqueda i{
+        display: none !important;
+    }
+
+    footer .infoFooter ul{
+        margin-bottom: 40px !important;
+    }
+
+
+    footer p{
+        width: 200% !important;
+        text-align: center;
     }
 }
 
