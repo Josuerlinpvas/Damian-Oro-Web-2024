@@ -2313,6 +2313,36 @@ footer .infoFooter .footeroptions:hover{
         font-size: 16px !important;
      }
 
+        footer .infoFooter ul{
+        margin-bottom: 40px !important;
+    }
+
+
+    footer p{
+        width: 200% !important;
+        text-align: center;
+    }
+
+     .contenedor .varmenu #barrabusqueda{
+        height: 30px !important;
+    }
+
+    .contenedor .varmenu .barrabusqueda input{
+        font-size: 13px !important;
+    }
+
+    .contenedor .varmenu .barrabusqueda i{
+        display: none !important;
+    }
+
+    .contenedor .secNosotros .MVV i{
+        display: none;
+    }
+
+    .contenedor .varmenu {
+        margin-top: 10px !important;
+    }
+
 }
 
 
@@ -2377,34 +2407,8 @@ footer .infoFooter .footeroptions:hover{
         border-radius: 30px;
     }
     
-    .contenedor .secNosotros .MVV i{
-        display: none;
-    }
-
-    .contenedor .varmenu {
-        margin-top: 10px !important;
-    }
-
-    .contenedor .varmenu #barrabusqueda{
-        height: 30px !important;
-    }
-
-    .contenedor .varmenu .barrabusqueda input{
-        font-size: 16px !important;
-    }
-
-    .contenedor .varmenu .barrabusqueda i{
-        display: none !important;
-    }
-
-    footer .infoFooter ul{
-        margin-bottom: 40px !important;
-    }
 
 
-    footer p{
-        width: 200% !important;
-        text-align: center;
-    }
+ 
 }
 
